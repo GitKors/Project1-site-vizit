@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
+
+
+body { 
+    background-color:rgb(240, 244,254);
+}
+.em {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+.header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: aqua;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.title::after {
+    content: url(../img/lab.png);
+    position: absolute;
+    right: 15px;
+
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.nav_items {
+    margin: 25px;
+    text-decoration: none;
+    color: #2104ff;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.5s;
+    font-size: 18px;
+
+}
+
+.nav_items:hover {
+    color: darkviolet;
+    background-color: cyan;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #2104ff;
+    top: 2px;
+    
+}
+
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-image: url(../img/fon.png);
+    width: 100%;
+    height: 350px;
+    margin-top: -160px;
+    border-radius: 15px;
+}
+
+
+
+footer img{
+    background: black;
+    padding: 10px;
+    box-shadow: 15px 10px 10px  rgb(170, 160, 199) ;
+}
+
+
+
+#clock {
+    background-color: #2104ff;
+    color: #f4f4f4;
+    border:4px outset #f6f6f6;
+    padding:5px 20px;
+    position: relative;
+    top: -32px;
+    right: -4px;
+}
+
+
+
+.gif {
+    width: 1vw;
+    position: relative;
+    top: 144px;
+    left: 489px;
+}
+
+.footer {
+	top: 100%;
+	width: 100%;
+   /* position: absolute; */
+}
+
+
+
+.btn {
+    display: block;
+    width: 220px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(28, 9, 24);
+    border: 1px solid rgb(146, 23, 136);
+    padding: 15px 0;
+    margin: 5px auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+    border-radius: 5px;
+    background-color: aqua;
+    box-shadow: 10px 10px rgb(135, 129, 129, .3);
+    
+}
+
+.btn:hover {
+    background-color: yellow;
+    color: red;
+    transform: rotate(360deg);
+    transition-duration: 2s;
+   
+}
+
+img {
+    border-radius: 15px;
+    box-shadow: 15px 10px 10px  rgb(196, 22, 109) ;
+}
+
+.popup {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    background-color: rgb(26, 40, 231);
+    color: white;
+    padding: 30px;
+    position: relative;
+    transition: .5s all;
+    top: -999px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.popup input {
+    display: block;
+    width: 100%;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    margin: 10px 0;
+}
+
+.submit {
+    background-color: white;
+    cursor: pointer;
+}
+
+#modal{
+    display: none;
+}
+
+#modal:checked ~ .popup{
+    top: 0;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+
+.line_foo {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: none;
+        width: 50%;
+    }
+    
+    .footer {
+        position: relative;
+        top: 300px;
+    }
+    
+
+
+    .gif {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    #clock {
+    background-color: #2104ff;
+    color: #f4f4f4;
+    border: 4px outset #f6f6f6;
+    padding: 5px 20px;
+    position: relative;
+    top: -77px;
+    right: -4px;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/hf.css">
+	<link rel="shortcut icon" href="img/myfoto.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<script>  
+		setInterval(function () {
+			var now = new Date();
+			var clock = document.getElementById("clock");
+			clock.innerHTML = now.toLocaleTimeString();
+		}, 1000);
+	</script>
+</head>
+
+<body>
+	<title>Визитка</title>
+	<header>
+		<div class="header">
+			<h1 class="title"><em class="em">Корсаков Алексей Геннадьевич</em></h1>
+			<h2>Front-End разработчик</h2>
+		
+		</div>
+		<span id="clock"></span>
+	</header>
+
+	<main>
+		<div class="nav">
+			<a class="nav_items" href="#">ОБО МНЕ</a>
+			<a class="nav_items" href="#">ОБРАЗОВАНИЕ</a>
+			<a class="nav_items" href="#">ХОББИ</a>
+			<a class="nav_items" href="#">РАБОТА</a>
+		</div>
+
+
+		<div class="wrapper">
+			<input type="checkbox" id="modal">
+			<label class="btn" for="modal">Мои Даты</label>
+			<form action="" class="popup">
+				<ul>
+					<li>06.2022 Начал курс профориентации</li><br>
+					<li>07.2022 Закончил курс профориентации</li><br>
+					<li>07.2022 Начал курс Frontend разработчик</li><br>
+				</ul>
+			<label class="close" for="modal">+</label>
+			</form>
+		</div>
+		
+		<div class="content">
+			<div class="me">
+				<p class="num1"><strong>ОБО МНЕ</strong></p>
+				<br>
+				<img src="img/myfoto2.jpg" width="200" height="200" alt="My foto">
+				<br>
+				<p class="num0">Меня зовут Алексей,мне 32<br> года,<br>живу в Санкт-Петербурге</p> 
+			</div>
+
+			<div class="ed">
+				<p class="educ"><strong>ОБРАЗОВАНИЕ</strong></p>
+				<br>
+				<img src="img/ed.jpg" width="200" height="200" alt="Education">
+				<br>
+				<p class="num0">ИСПЛ 116,<br>автомеханик</p>  
+			</div>
+
+			<div class="hobb">
+				<p class="hobbs"><strong>ХОББИ</strong></p>
+				<br>
+				<img src="img/hobb.jpg" width="200" height="200" alt="Hobbie">
+				<br>
+				<p class="num0">Автомобили,<br>программирование</p>
+			</div>
+
+			<div class="job">
+				<p class="job__1"><strong>РАБОТА</strong></p>
+				<br>
+    			<img src="img/job.jpg" width="200" height="200" alt="Job">
+				<br>
+				<p class="num0">Водитель</p>
+ 			</div>
+			</div> <!--Content  -->
+	
+	</main>
+
+	<footer class="footer">
+		<div class="line_foo"></div>
+		<div class="gif">
+			<img src="img/gif1.gif" width="100" height="100" class="Gif" >
+		</div>
+		<div class="foo">
+			<p align="center">Санкт-Петербург, 2022</p>
+			<h6 align="center">Создано благодаря курсу SkillFactory</h6>
+			<p align="center">
+			<a href="tel:89218984800"><strong>89218984800</strong></a>
+			</p>
+	
+		<div align="center">
+			<a href ="https://mail.ru/" title ="alexkorsakow@mail.ru" >alexkorsakow@mail.ru </a>
+		</div>
+			<p align="center">Все размещённые изображения на данном сайте без нарушения авторских прав</p>
+		</div>
+	</footer>
+</body>
+</html>
